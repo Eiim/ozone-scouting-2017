@@ -1,0 +1,77 @@
+<!-- Not sure what this is needed for -->
+<!--<span class="badge" id="upload"></span>-->
+
+
+<div class="mdl-grid center-items">
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="mdl-card mdl-shadow--2dp custom-center-width">
+
+            <!-- Header -->
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Post-Match Analysis</h2>
+            </div>
+
+            <!-- Dividing line -->
+            <hr style="margin: 0px; margin-left: 16px; margin-right: 16px;">
+
+            <!-- Body -->
+            <div class="mdl-card__supporting-text custom-center-width">
+
+                <!--Text Field for Post-Match Notes-->
+                <form action="#" class="custom-side-padding--0-px">
+                    <div class="mdl-textfield mdl-js-textfield custom-center-width mdl-textfield--floating-label removeDirty">
+                        <textarea class="mdl-textfield__input" rows="1" id="postnotes"></textarea>
+                        <label class="mdl-textfield__label" for="postnotes">Post-Match Notes</label>
+                    </div>
+                </form>
+
+                <!-- Text Field for Improvement Suggestions -->
+                <form action="#" class="custom-side-padding--0-px teamScout">
+                    <div class="mdl-textfield mdl-js-textfield custom-center-width mdl-textfield--floating-label removeDirty">
+                        <textarea class="mdl-textfield__input" rows="1" id="improvements"></textarea>
+                        <label class="mdl-textfield__label" for="improvements">Possible Improvements</label>
+                    </div>
+                </form>
+
+                <div class="teamScout">
+                    <div style="position: relative;">
+                        <img id="preimage-map" src="/assets/img/Defense Paths.png" border="0" width="100%"/>
+                    </div>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="location-1" id="l1">
+                        <input type="checkbox" id="location-1" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">1</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="location-2" id="l2">
+                        <input type="checkbox" id="location-2" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">2</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="location-3" id="l3">
+                        <input type="checkbox" id="location-3" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">3</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="location-4" id="l4">
+                        <input type="checkbox" id="location-4" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">4</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="location-5" id="l5">
+                        <input type="checkbox" id="location-5" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">5</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="location-6" id="l6">
+                        <input type="checkbox" id="location-6" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">6</span>
+                    </label>
+                </div>
+
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="needsReview" id="nrID">
+                        <input type="radio" id="needsReview" class="mdl-radio__button" name="needsR" value="1">
+                        <span class="mdl-radio__label">Needs Review</span>
+                    </label>
+
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent disableAll" onclick="SaveLocal(); nextPage('post');" style="float: right;" id="saveBtn" disabled>
+                        Save
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
