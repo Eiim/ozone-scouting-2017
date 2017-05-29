@@ -13,6 +13,7 @@ Project End: April 2017
 
 ### How to set up the local server ###
 
+* If you have not already, download [PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows) and [Google Cloud SDK](https://cloud.google.com/sdk/downloads)
 * Open up console in PyCharm
 * Find dev_appserver.py (Generally in "C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin\dev_appserver.py")
 * Find the project folder (Generally in "C:\Users\ryan2\Documents\GitHub\frc4611")
