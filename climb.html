@@ -1,0 +1,35 @@
+<!--Climb Card-->
+<div class="mdl-grid center-items">
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="mdl-card mdl-shadow--2dp custom-center-width">
+
+            <!-- Header -->
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Climb</h2>
+            </div>
+
+            <!-- Dividing line -->
+            <hr style="margin: 0px; margin-left: 16px; margin-right: 16px;">
+
+            <!-- Body -->
+            <div class="mdl-card__supporting-text custom-center-width">
+                <button type="button" id="ClimbStartButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="ClimbTimerStart();" style="width: 100%" disabled>Start Climbing</button>
+                <br><br>
+                <label for="climbSuccess" class="mdl-radio mdl-js-radio" id="climbSuccessID">
+                    <input id="climbSuccess" type="radio" name="climbstatus" value="success" class="mdl-radio__button" onclick="ClimbResult(this.value)">
+                    <span>Success</span>
+                </label>
+
+                <label for="climbFail" class="mdl-radio mdl-js-radio" id="climbFailID">
+                    <input id="climbFail" type="radio" name="climbstatus" value="fail" class="mdl-radio__button" onclick="ClimbResult(this.value)">
+                    <span>Fail</span>
+                </label>
+
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="nextPage('climb');" style="margin: 16px 30%; width: 40%">
+                        Next
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>

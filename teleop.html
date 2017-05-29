@@ -1,0 +1,175 @@
+<!--Gears Card-->
+<div class="mdl-grid center-items teamScout">
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="mdl-card mdl-shadow--2dp custom-center-width">
+
+            <!-- Header -->
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Gears</h2>
+
+                <div class="mdl-layout-spacer"></div>
+
+                <span onclick="" style="display:none;">Undo </span>
+                <i class="material-icons" onclick="" style="display:none;">undo</i>
+            </div>
+
+            <!-- Dividing line -->
+            <hr style="margin: 0px; margin-left: 16px; margin-right: 16px;">
+
+            <!-- Body -->
+            <div class="mdl-card__supporting-text custom-center-width">
+                <button type="button" id="GearStartButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="GearTimerStart()" style="width: 100%" disabled>Start Gear Cycle</button>
+                <br><br>
+                <button type="button" id="GearStopButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="GearTimerStop()" style="width: 100%" disabled>Stop Gear Cycle</button>
+                <br><br>
+                <label for="successRadio" class="mdl-radio mdl-js-radio" id="successRadioID">
+                    <input id="successRadio" type="radio" name="gearstatus" value="success" class="mdl-radio__button" onclick="SubmitGear(this.value)">
+                    <span>Success</span>
+                </label>
+
+                <label for="failRadio" class="mdl-radio mdl-js-radio" id="failRadioID">
+                    <input id="failRadio" type="radio" name="gearstatus" value="fail" class="mdl-radio__button" onclick="SubmitGear(this.value)">
+                    <span>Fail</span>
+                </label>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------------------
+--------------------------CARD CHANGE------------------------------
+------------------------------------------------------------------>
+
+<!-- Shooting/Collecting Card -->
+<div class="mdl-grid center-items teamScout">
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="mdl-card mdl-shadow--2dp custom-center-width">
+
+            <!-- Header -->
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Shooting/Collecting</h2>
+            </div>
+
+            <!--Dividing line -->
+            <hr style="margin: 0px; margin-left: 16px; margin-right: 16px;">
+
+            <!-- Body -->
+            <div class="mdl-card__supporting-text custom-center-width">
+                <button type="button" id="BallShootStartButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="BallShootTimerStart()" style="width: 100%" disabled>Start Ball Shooting</button>
+                <br><br>
+                <button type="button" id="BallShootStopButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="BallShootTimerStop()" style="width: 100%" disabled>Stop Ball Shooting</button>
+                <br><br>
+                <button type="button" id="BallCollectStartButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="BallCollectTimerStart()" style="width: 100%" disabled>Start Ball Collecting</button>
+                <br><br>
+                <button type="button" id="BallCollectStopButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="BallCollectTimerStop()" style="width: 100%" disabled>Stop Ball Collecting</button>
+                <br><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------------------
+--------------------------CARD CHANGE------------------------------
+------------------------------------------------------------------>
+
+<!--Defense Card-->
+<div class="mdl-grid center-items teamScout">
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="mdl-card mdl-shadow--2dp custom-center-width">
+
+            <!-- Header -->
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Defense</h2>
+            </div>
+
+            <!-- Dividing line -->
+            <hr style="margin: 0px; margin-left: 16px; margin-right: 16px;">
+
+            <!-- Body -->
+            <div class="mdl-card__supporting-text custom-center-width">
+                <button type="button" id="DefenseStartButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="DefenseTimerStart()" style="width: 100%" disabled>Start Defense</button>
+                <br><br>
+                <button type="button" id="DefenseStopButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="DefenseTimerStop()" style="width: 100%" disabled>Stop Defense</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------------------
+--------------------------CARD CHANGE------------------------------
+------------------------------------------------------------------>
+
+<!-- Ball Scout Card -->
+<div class="mdl-grid center-items fuelScout">
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="mdl-card mdl-shadow--2dp custom-center-width">
+
+            <!-- Header -->
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Ball Scouting</h2>
+            </div>
+
+            <!-- Dividing line -->
+            <hr style="margin: 0px; margin-left: 16px; margin-right: 16px; margin-bottom: 16px;">
+
+            <!-- Body -->
+            <div style="background-color: rgb(30, 100, 240); color: #FFFFFF; padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px;">
+                <div id="blueClear" class="mdl-textfield mdl-js-textfield removeDirty" style="width: 47.5%;">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="blueScore">
+                    <label class="mdl-textfield__label" for="blueScore">Score</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+                <div style="padding: 20px 0; width: 47.5%; float: right;">
+                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="BallScoutStop('blue')" value="" style="width: 100%;" id="ball1" disabled>
+                      Enter
+                  </button>
+                </div>
+
+            </div>
+            <br>
+
+            <!-- Body 2 -->
+            <div style="background-color: rgb(190, 15, 15); color: #FFFFFF; padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px;">
+                <div id="redClear" class="mdl-textfield mdl-js-textfield removeDirty" style="width: 47.5%;">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="redScore">
+                    <label class="mdl-textfield__label" for="redScore">Score</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+                <div style="padding: 20px 0; width: 47.5%; float: right;">
+                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored disableAll" onclick="BallScoutStop('red')" value="" style="width: 100%;" id="ball2" disabled>
+                        Enter
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------------------
+--------------------------CARD CHANGE------------------------------
+------------------------------------------------------------------>
+
+<!-- Next Card-->
+<div class="mdl-grid center-items teamScout">
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="mdl-card mdl-shadow--2dp custom-center-width">
+
+            <!-- Header -->
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Next</h2>
+            </div>
+
+            <!-- Dividing line -->
+            <hr style="margin: 0px; margin-left: 16px; margin-right: 16px;">
+
+            <!-- Body -->
+            <div class="mdl-card__supporting-text custom-center-width">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="nextPage('teleop');" style="margin: 16px 30%; width: 40%">
+                        Next
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

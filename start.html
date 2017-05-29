@@ -1,0 +1,31 @@
+<div class="mdl-grid center-items">
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="mdl-card mdl-shadow--2dp custom-center-width">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Ozone Scouting</h2>
+            </div>
+            <div class="mdl-card__media center-items" style="background-color: #FFFFFF;">
+                <img src="assets/img/iOS240.ico" width="180" height="180" border="0" alt="" style="display: block; margin: 0 auto;">
+            </div>
+            <div class="mdl-card__supporting-text custom-center-width">
+                Scouter:
+                <select name="scouter" id="scouter" class="form-control"></select><br>
+                Match:
+                <select name="match" id="match" class="form-control"></select><br>
+                <input id="overridecheck" name="your_name" value="your_value" type="checkbox" style="display: none;"> Override Assignment</input> <!-- DOES NOT DISPLAY CURRENTLY -->
+                <div id="overrideDiv" style="display:none;">
+                    <select name="override" id="override" class="form-control"></select><br>
+                </div>
+
+
+            </div>
+            <div id="exportDiv" style="background-color: rgb(33, 150, 243); text-align: center; vertical-align: middle; color: #FFFFFF; padding-top: 12px; padding-bottom: 12px; font-size: 30px;">
+                <span id="exportText"></span>
+            </div>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="nextPage('start');" style="margin: 16px 30%; width: 40%">
+                        Next
+            </button>
+        </div>
+    </div>
+</div>
